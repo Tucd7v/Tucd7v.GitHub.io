@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://share.blogtuc.xyz</id>
     <title>TucBlog</title>
-    <updated>2020-09-10T05:04:48.523Z</updated>
+    <updated>2020-09-10T06:08:47.125Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://share.blogtuc.xyz"/>
     <link rel="self" href="https://share.blogtuc.xyz/atom.xml"/>
@@ -16,28 +16,24 @@
         </link>
         <updated>2020-05-12T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>用过linux的对aptget yum 等包安装管理器肯定会很熟悉<br>
-群晖也是继续linux，并且可以连接ssh获取更多系统层面的访问权限。但是进入shell后可用的命令实在太少，有什么方法能完全发挥它的潜力呢？</p>
+群晖也是基于linux，并且可以连接ssh获取更多系统层面的访问权限。但是进入shell后可用的命令实在太少，有什么方法能完全发挥它的潜力呢？</p>
 <p>可以使用一个轻量化的opkg进行配置</p>
 <p><strong>接下来的设置基于DSM6.2进行配置。6.1未尝试过 但是配置应该无较大差异</strong></p>
 <h2 id="">👇</h2>
 <ol>
-<li>登陆群晖后台，打开套件中心，点击设置，点击套件来源<br>
+<li>
+<p>登陆群晖后台，打开套件中心，点击设置，点击套件来源<br>
 添加 https://www.cphub.net/<br>
-<img src="https://share.blogtuc.xyz/post-images/1599713672397.png" alt="" loading="lazy"></li>
+<img src="https://share.blogtuc.xyz/post-images/1599713672397.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>添加后返回 点击社群 搜索opkg<br>
+<img src="https://share.blogtuc.xyz/post-images/1599717851104.png" alt="" loading="lazy"><br>
+安装时只需更改Entware oPKG这个一个选项 其他不需要更改</p>
+</li>
 </ol>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>安装之后 连接ssh 使用sudo权限 输入opkg update 如果可以正常更新即安装成功<br>
+<img src="https://share.blogtuc.xyz/post-images/1599718094522.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>

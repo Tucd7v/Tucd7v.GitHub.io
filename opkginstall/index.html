@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>TucBlog</title>
+<title>为群晖安装包管理器 | TucBlog</title>
 
 <link rel="shortcut icon" href="https://share.blogtuc.xyz/favicon.ico?v=1599713815336">
 
@@ -25,11 +25,11 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -77,38 +77,91 @@
     </div>
 </nav>
 
-        <div class="post-container">
-            <div class="post-detail gt-bg-theme-color-first">
-                <article class="gt-post-content">
-                    <h2 class="post-title">归档</h2>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    为群晖安装包管理器
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-05-13 ·
+                    </time>
+                    
+                        <a href="https://share.blogtuc.xyz/IokKeWXdx/" class="post-tags">
+                            # Gridea
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>用过linux的对aptget yum 等包安装管理器肯定会很熟悉<br>
+群晖也是继续linux，并且可以连接ssh获取更多系统层面的访问权限。但是进入shell后可用的命令实在太少，有什么方法能完全发挥它的潜力呢？</p>
+<p>可以使用一个轻量化的opkg进行配置</p>
+<p><strong>接下来的设置基于DSM6.2进行配置。6.1未尝试过 但是配置应该无较大差异</strong></p>
+<h2 id="">👇</h2>
+<ol>
+<li>登陆群晖后台，打开套件中心，点击设置，点击套件来源<br>
+添加 https://www.cphub.net/<br>
+<img src="https://share.blogtuc.xyz/post-images/1599713672397.png" alt="" loading="lazy"></li>
+</ol>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+
+                </div>
+            </article>
+        </div>
+
         
 
-<div class="archives-container">
-    
-        <h2 class="year gt-c-cotent-color-first">2020</h2>
         
-            
-                <article class="post">
-                    <a href="https://share.blogtuc.xyz/opkginstall/">
-                        <div class="post-title gt-c-content-color-first">
-                            <small><b>2020-05-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
-                            为群晖安装包管理器
-                        </div>
-                    </a>
-                </article>
-            
+            <span id="/opkginstall/" class="leancloud_visitors" data-flag-title="为群晖安装包管理器">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
         
-    
-</div>
 
-        <div class="pagination-container">
-    
-    
-</div>
+        
 
-    </article>
-</div>
-</div>
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'OA3yt78CLyts4eKCMOYA91Eb-gzGzoHsz',
+		appKey: 'Bl4trplqCOWzdoEqpqieIyBX',
+		avatar: 'monsterid',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '说点什么吧',
+		visitor: true,
+	});
+</script>
+
+        
+
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first"></div>
     <div class="social-container">

@@ -6,7 +6,7 @@
 
 <title>为群晖安装包管理器 | TucBlog</title>
 
-<link rel="shortcut icon" href="https://share.blogtuc.xyz/favicon.ico?v=1599718173730">
+<link rel="shortcut icon" href="https://share.blogtuc.xyz/favicon.ico?v=1599913709174">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://share.blogtuc.xyz/styles/main.css">
@@ -69,7 +69,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1599718173730" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1599913709174" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -111,7 +111,12 @@
 安装时只需更改Entware oPKG这个一个选项 其他不需要更改</p>
 </li>
 </ol>
-<p>安装之后 连接ssh 使用sudo权限 输入opkg update 如果可以正常更新即安装成功<br>
+<p>完成后，打开群晖的ssh功能<br>
+在控制面板中打开终端机和SNMP 勾选启用ssh功能 记住端口号。</p>
+<p>使用你喜欢的软件登陆到ssh。这里我直接使用“终端”进行登陆（较新版本的Windows10也可直接通过cmd进行连接）<br>
+输入：<br>
+<code>ssh admin@192.168.50.186 -p 2222</code> ssh 群晖用户名@IP地址 -p 端口号（如果是默认22则不需要加-p）</p>
+<p>使用sudo -i切换到管理员权限，密码也是群晖的登陆密码 之后输入opkg update 如果可以正常更新即安装成功<br>
 <img src="https://share.blogtuc.xyz/post-images/1599718094522.png" alt="" loading="lazy"></p>
 
                 </div>

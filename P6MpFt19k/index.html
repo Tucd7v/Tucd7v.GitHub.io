@@ -6,7 +6,7 @@
 
 <title>群晖监视显示屏显示磁盘温度 | TucBlog</title>
 
-<link rel="shortcut icon" href="https://share.blogtuc.xyz/favicon.ico?v=1599914157825">
+<link rel="shortcut icon" href="https://share.blogtuc.xyz/favicon.ico?v=1599968636723">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://share.blogtuc.xyz/styles/main.css">
@@ -69,7 +69,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1599914157825" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1599968636723" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -135,7 +135,7 @@
 <blockquote>
 <p>相对应的参数意义我也无法得到 那就只能比葫芦画瓢 拿里面已经存在的信息往新硬盘上去套。<br>
 <code>&quot;ST3120215AS&quot; 194 C &quot;Seagate Barracuda 7200.10 SATA 120GB&quot;</code><br>
-比如这个 前面应该是硬盘型号 194这个未知 C是温度的单位 后面是对应的硬盘全称（填写时不冲突即可）<br>
+比如这个 前面应该是硬盘型号 194这个未知 C是温度的单位 后面是对应的硬盘全称（填写时不冲突即可，同型号硬盘只需要添加一个）<br>
 那如果我要把我目前的硬盘添加进去 应该是这种格式<br>
 <code>&quot;ST4000VM000-2AF166&quot; 194 C &quot;Seagate 4T&quot;</code></p>
 </blockquote>
@@ -147,7 +147,7 @@
 <h3 id="连接到lcd4linux">连接到lcd4linux</h3>
 <p><code>hddtemp -d /dev/* /dev/* /dev/*</code><br>
 使用这条指令来启动远程数据发送 硬盘路径可以多个添加<br>
-<strong>添加的每一个硬盘路径都需要在之前的硬盘信息数据库内配置</strong><br>
+<strong>添加的每一个硬盘路径都需要在之前的硬盘信息数据库内存在</strong><br>
 执行之后，打开lcd4linux的配置文件 在“Display Image{}”之后加入以下代码</p>
 <pre><code>Widget SmallHDDTemp {                         //Widget名为SmallHDDTemp，名称可以自行修改
     class 'Text' 

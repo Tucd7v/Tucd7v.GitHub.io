@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://share.blogtuc.xyz</id>
     <title>TucBlog</title>
-    <updated>2020-09-13T03:43:59.140Z</updated>
+    <updated>2020-09-13T03:45:00.265Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://share.blogtuc.xyz"/>
     <link rel="self" href="https://share.blogtuc.xyz/atom.xml"/>
@@ -70,9 +70,9 @@
 使用这条指令来启动远程数据发送 硬盘路径可以多个添加<br>
 <strong>添加的每一个硬盘路径都需要在之前的硬盘信息数据库内存在</strong><br>
 执行之后，打开lcd4linux的配置文件 在“Display Image{}”之后加入以下代码</p>
-<pre><code>Widget SmallHDDTemp {                         //Widget名为SmallHDDTemp，名称可以自行修改
+<pre><code>Widget SmallHDDTemp {                         //Widget名为SmallHDDTemp，名称可以自行修改多个硬盘就创建多个widget，名称不可重复
     class 'Text' 
-    expression hddtemp('/dev/hda')          //只可填写一个硬盘的路径 需要多个就创建多个Widget
+    expression hddtemp('/dev/hda')          //只可填写一个硬盘的路径
     width 4                                             //宽度
     precision 1                                        //保留一位小数点 如显示整数可以去掉
     align 'R'                                            //靠右对其 靠左就是L
